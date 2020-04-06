@@ -1,0 +1,61 @@
+\pagestyle{headings}
+\def\thebibliography#1{
+  \section*{\markboth{List of Publications}{List of Publications}}
+  \list
+  {[\arabic{enumi}]}{\settowidth\labelwidth{[#1]}\leftmargin\labelwidth
+    \advance\leftmargin\labelsep
+    \usecounter{enumi}}
+  \def\newblock{\hskip .11em plus .33em minus .07em}
+  \sloppy
+  \sfcode`\.=1000\relax
+}
+
+% \renewcommande\refname{Research progresses}
+{\small \begin{thebibliography}{99}
+
+\bibitem{Sone2014a}
+曽根，佐藤，金宮，``平面浮遊ベース宇宙ロボットにおけるPoint-To-Point 無反動制御''，
+ロボティクス・メカトロニクス講演会，1P2-K06, 2014.
+
+\bibitem{Sone2015a}
+曽根，佐藤，金宮，``浮遊ベース宇宙ロボットにおける無反動制御を用いた実用例の提案''，
+宇宙科学技術連合講演会，1M12, 2014.
+
+
+\bibitem{Sone2015a}
+H.\ Sone and D.\ N. Nenchev, ``{On some practical reactionless motion tasks with
+  a free-floating space robot},'' in \emph{Proc. IEEE Int. Conf. Robot. Autom.}, 2015, pp. 2836--2841.
+
+\bibitem{Nenchev2015b}
+D.\ N. Nenchev, R.\ Okawa and H.\ Sone, ``{Task-space dynamics and motion/force
+  control of fixed-base manipulators under reaction null-space-based redundancy
+  resolution},'' \emph{Robotica}, pp. 1--18, 2015.
+
+\bibitem{Sone2015c}
+曽根，佐藤，金宮，``宇宙ロボットにおける無反動マニピュレーションと
+リアクションホイール使用時のエネルギー効率の比較検証''，ロボティクス・メカトロニクス講演会，1P2-U06, 2015.
+
+\bibitem{Sone2015d}
+曽根，佐藤，金宮，``宇宙ロボットにおける無反動制御のエネルギー効率の解析''，日本ロボット学会学術講演会，3C2-06, 2015.
+
+\bibitem{Sone2015e}
+曽根，佐藤，金宮，``宇宙ロボットにおける無反動制御のエネルギー効率の解析''，第98回総研セミナー（TCU Robitics Workshop），2015.
+
+\bibitem{Sone2015f}
+H.\ Sone and D.\ N. Nenchev, ``{Reactionless Camera Inspection With a Free-Flying/Floating Space
+Robot Under Reaction Null-Space Motion Control},''  \emph{Acta Astronautica}, submitted.
+
+\bibitem{Sone2015f}
+H.\ Sone and D.\ N. Nenchev, ``{Assessment of Reaction-Null Space Based Motion Control During Practical Camera Inspection Task},''
+in \emph{Proc. The International Symposium on Artificial Intelligence, Robotics and Automation in Space}, submitted.
+
+
+\end{thebibliography}
+}
+
+
+
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: "main"
+%%% End:

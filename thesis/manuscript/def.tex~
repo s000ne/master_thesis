@@ -1,0 +1,36 @@
+% Macro
+\def\vec#1{\mbox{\boldmath $#1$}}
+\def\fig#1{{Fig.~\ref{fig:#1}}}
+\def\tab#1{{Tab.~\ref{tab:#1}}}
+\def\eq#1{{(\ref{eq:#1})}}
+\def\cha#1{{Chapter~\ref{cha:#1}}}
+\def\sec#1{{Section~\ref{sec:#1}}}
+\def\app#1{{Appendix~\ref{app:#1}}}
+\def\R#1{{\in\mathbb{R}^{#1}}}
+\def\RR#1#2{{\in\mathbb{R}^{#1 \times #2}}}
+\def\Mwm{{\tilde{\bm{M}}_{\omega m}}}
+\def\Mvl{{\tilde{\bm{M}}_{vl}}}
+\def\thd{{\dot{\bbm{\theta}}}}
+\def\thdd{{\ddot{\bbm{\theta}}}}
+\def\th{{\bbm{\theta}}}
+\def\hth{{\hat{\bm{\theta}}}}
+\def\hthd{{\dot{\hat{\bm{\theta}}}}}
+\def\hthdd{{\ddot{\hat{\bm{\theta}}}}}
+\def\ph{{\bbm{\phi}}}
+\def\phd{{\dot{{\bbm{\phi}}}}}
+\def\phdd{{\ddot{{\bbm{\phi}}}}}
+\def\unit#1{{~\mathrm{#1}}}
+\def\tbm#1{{\tilde{\bbm{#1}}}}
+\def\hbm#1{{\hat{\bbm{#1}}}}
+\def\PD#1#2{{\frac{\partial #1}{\partial #2}}}
+\def\bmat#1{{\begin{bmatrix} #1 \end{bmatrix}}}
+% \def\bbm#1{{\bm{#1}}} % For jsme
+\def\bbm#1{\bm{#1}}
+\def\q{\bm{q}}
+\def\qd{\dot{\bm{q}}}
+\def\qdd{\ddot{\bm{q}}}
+\def\hq{\hat{\bm{q}}}
+\def\hqd{\dot{\hat{\bm{q}}}}
+\def\hqdd{\ddot{\hat{\bm{q}}}}
+\def\hmathc#1{\hat{\mathcal{#1}}}
+

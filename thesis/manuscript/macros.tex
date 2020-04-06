@@ -1,0 +1,68 @@
+% Caption style
+\renewcommand{\figurename}{Fig.~}
+\renewcommand{\tablename}{Table~}
+% end
+
+% Equation style
+\newcommand{\mbm}[1]{\mbox{\boldmath $#1$}}
+% end
+
+% Book cover
+\newcommand{\studentid}{000000}
+\newcommand{\mauthor}{Musashi~Taro}
+\newcommand{\university}{Musashi Institute of Technology}
+\newcommand{\fixedphrase}{
+    Master Thesis Presented to\\\\
+    the Graduate School of Engineering,\\\\
+    \university \\\\
+    in Partial Fulfillment of the Requirements\\\\
+    for the Degree of Master of Engineering Course \\\\
+}
+\newcommand{\adviser}{
+  Advisor:
+  \begin{tabular}[t]{l}
+    Prof.~Dragomir~N.~Nenchev\\
+    Assoc.~Prof.~Daisuke~Sato
+  \end{tabular}
+}
+\newcommand{\cover}{{\bf
+  \begin{tabular}[t]{c}
+     \fixedphrase\\
+     \studentid~\mauthor\\
+     \adviser
+  \end{tabular}
+}}
+\newcommand{\dateofsubmission}{\today}
+
+% Style of the title of acknowledgment
+\newcommand{\acknowledgment}{
+  \chapter*{\begin{center}Acknowledgment \end{center}}
+  \addcontentsline{toc}{chapter}{Acknowledgment}
+}
+
+% Signature of acknowledgment
+\newcommand{\signature}{
+  \begin{flushright}
+    \dateofsubmission\\
+
+    \mauthor
+  \end{flushright}
+}
+
+% Style of the title of reference
+\newcommand{\reference}{
+  \chapter*{\begin{center}References \end{center}}
+  \addcontentsline{toc}{chapter}{References}
+}
+
+% Style of the title of reference
+\newcommand{\result}{
+  \chapter*{\begin{center}List of Publications \end{center}}
+  \addcontentsline{toc}{chapter}{Research Progresses}
+}
+
+
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: "main"
+%%% End:

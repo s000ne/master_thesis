@@ -1,0 +1,47 @@
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {1.1}{\ignorespaces Space robotic systems: (a) Canadarm \copyright NASA, (b) Canadarm 2 \copyright NASA, (c) JEMRMS \copyright JAXA and (d) ETS-VII.}}{12}{figure.1.1}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {2.1}{\ignorespaces General model of free-floating base robot.}}{24}{figure.2.1}
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Relationship between a variation of translation and a rotational variation.}}{30}{figure.2.2}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {3.1}{\ignorespaces A planar two-DoF space manipulator model with $m_{i} = 100{\nobreakspace {}\mathrm {kg}}$, $l_{i} = 1.0{\nobreakspace {}\mathrm {m}}$ ($i = 1, 2$); the base mass is $m_{b} = 1000{\nobreakspace {}\mathrm {kg}}$. The vector field is obtain with $r = 0{\nobreakspace {}\mathrm {m}}$.}}{39}{figure.3.1}
+\contentsline {figure}{\numberline {3.2}{\ignorespaces The vector field and nullclines for each joint direction when $r$ variates as: (a) $r = 0.5{\nobreakspace {}\mathrm {m}}$, (b) $r = 0.945{\nobreakspace {}\mathrm {m}}$ and (c) $r = 1.5{\nobreakspace {}\mathrm {m}}$.}}{41}{figure.3.2}
+\contentsline {figure}{\numberline {3.3}{\ignorespaces This figure shows the determinant of $(\bm {M}_{\omega m}{\mathaccentV {tilde}07E{\bm {M}}}_{\omega m}^{T})$ and the distance between the manipulator CoM and the base one as color map: (a) $\mathrm {det}({\mathaccentV {tilde}07E{\bm {M}}}_{\omega m}{\mathaccentV {tilde}07E{\bm {M}}}_{\omega m})$ and (b) the distance between the manipulator CoM and the base one.}}{42}{figure.3.3}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Our manipulator model with seven-DoF mechanism at the initial configuration ($\theta _{i} = 0{\nobreakspace {}\mathrm {rad}},\nobreakspace {}\forall \theta _{i}$).}}{46}{figure.4.1}
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Reactionless motion of the manipulator model: (a) the predominant wrist motion and (b) the elbow folding motion.}}{48}{figure.4.2}
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Inspection task using the hand-held camera: (a) target satellite to be refueled of captured and (b) own-satellite attached devices.}}{49}{figure.4.3}
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Simulation result under the satellite observation mission ({Fig.\nobreakspace {}\ref {fig:ins}}\nobreakspace {}(a)).}}{52}{figure.4.4}
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Simulation result under the inspection of own-satellite mounted devices ({Fig.\nobreakspace {}\ref {fig:ins}}\nobreakspace {}(b)).}}{53}{figure.4.5}
+\contentsline {figure}{\numberline {4.6}{\ignorespaces An example of the algorithmic singularity within the proposed method.}}{56}{figure.4.6}
+\contentsline {figure}{\numberline {4.7}{\ignorespaces Simulation results under the damped least-squares inverse with numerical filtering.}}{58}{figure.4.7}
+\contentsline {figure}{\numberline {4.8}{\ignorespaces Simulation results under the singularity consistent method.}}{60}{figure.4.8}
+\contentsline {figure}{\numberline {4.9}{\ignorespaces A motion obtained via the 3-Phase method.}}{61}{figure.4.9}
+\contentsline {figure}{\numberline {4.10}{\ignorespaces The simulation results under the 3-phase method: (a) the joint velocity and (b) the coupling angular momentum.}}{63}{figure.4.10}
+\contentsline {figure}{\numberline {4.11}{\ignorespaces The snapshot of the motion obtained via the 3-phase method.}}{64}{figure.4.11}
+\contentsline {figure}{\numberline {4.12}{\ignorespaces The base attitude deviations under the all methods: (a) 3-phase method, (b) JS-C, (c) IJ-C and (d) TJ-C.}}{65}{figure.4.12}
+\contentsline {figure}{\numberline {4.13}{\ignorespaces Motion snapshots from the deployment task under reactionless motion control.}}{67}{figure.4.13}
+\contentsline {figure}{\numberline {4.14}{\ignorespaces The snapshot of the motion under partial reactionless deployment.}}{68}{figure.4.14}
+\contentsline {figure}{\numberline {4.15}{\ignorespaces The snapshot of the motion under the conventional joint space interpolation.}}{69}{figure.4.15}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {5.1}{\ignorespaces The distribution of the cost function with the two-DoF model.}}{74}{figure.5.1}
+\contentsline {figure}{\numberline {5.2}{\ignorespaces This figure shows how the average of $C_{ratio}$ is affected by parameter variation.}}{75}{figure.5.2}
+\contentsline {figure}{\numberline {5.3}{\ignorespaces The disutribution of cost function with the four-DoF spatial manipulator model: (a) regularly appearing distribution $(\theta _{1},\theta _{2}) = (-3.05,0.403){\nobreakspace {}\mathrm {rad}}$ and (b) near the singularity $(\theta _{1},\theta _{2}) = (-\pi ,0){\nobreakspace {}\mathrm {rad}}$.}}{76}{figure.5.3}
+\contentsline {figure}{\numberline {5.4}{\ignorespaces An example of energy consumption comparison.}}{79}{figure.5.4}
+\contentsline {figure}{\numberline {5.5}{\ignorespaces Comparison of energy consumption under five conditions}}{80}{figure.5.5}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {6.1}{\ignorespaces Model of $n$-link manipulator model and its $n+1$ link control model for the RNS-based controller.}}{86}{figure.6.1}
+\contentsline {figure}{\numberline {6.2}{\ignorespaces Three-link planar redundant manipulator: (a) real model and (b) control model.}}{93}{figure.6.2}
+\contentsline {figure}{\numberline {6.3}{\ignorespaces Simulation results of end-effector position and force. The position error is along $x$-direction, while the force error is represented along $z$ direction, in the end-effector frame.}}{95}{figure.6.3}
+\contentsline {figure}{\numberline {6.4}{\ignorespaces Simulation results of the joint variables.}}{96}{figure.6.4}
+\contentsline {figure}{\numberline {6.5}{\ignorespaces Simulation model based on the arm of Rollin' Justin.}}{98}{figure.6.5}
+\contentsline {figure}{\numberline {6.6}{\ignorespaces Motion control direction is along $x$ axis, while force control direction is along $z$ axis, in the end-effector frame $\{E\}$.}}{99}{figure.6.6}
+\contentsline {figure}{\numberline {6.7}{\ignorespaces Simulation results of end-effector position and force measured in the inertial frame.}}{100}{figure.6.7}
+\contentsline {figure}{\numberline {6.8}{\ignorespaces Simulation results of joint-space behavior.}}{101}{figure.6.8}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {7.1}{\ignorespaces The time profiles of the joint velocity and the null-space velocity: the upper part represents the joint velocity; the lower part is the null-space velocity, respectively.}}{104}{figure.7.1}
+\contentsline {figure}{\numberline {7.2}{\ignorespaces A geometrical interpretation of the RNS constraint: (a) with a small mass of the constrained link and (b) with a large value of the mass.}}{107}{figure.7.2}
+\contentsline {figure}{\numberline {7.3}{\ignorespaces The root means square of the motion error.}}{108}{figure.7.3}
+\contentsline {figure}{\numberline {7.4}{\ignorespaces Time profile of the Euclidean norm of the null-space velocity: the line in red represents the velocity based acceleration solution; the line in green stands for the velocity with the damper.}}{111}{figure.7.4}
+\addvspace {10\p@ }
+\addvspace {10\p@ }

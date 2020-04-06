@@ -1,0 +1,79 @@
+\BOOKMARK [0][-]{chapter.1}{1 Introduction}{}% 1
+\BOOKMARK [1][-]{section.1.1}{1.1 Space robots}{chapter.1}% 2
+\BOOKMARK [2][-]{subsection.1.1.1}{1.1.1 Control issues with FFSR}{section.1.1}% 3
+\BOOKMARK [2][-]{subsection.1.1.2}{1.1.2 Reactionless motion control}{section.1.1}% 4
+\BOOKMARK [2][-]{subsection.1.1.3}{1.1.3 Energy consumption}{section.1.1}% 5
+\BOOKMARK [1][-]{section.1.2}{1.2 Motion/Force control}{chapter.1}% 6
+\BOOKMARK [1][-]{section.1.3}{1.3 Aim of this study}{chapter.1}% 7
+\BOOKMARK [1][-]{section.1.4}{1.4 Outline of this thesis}{chapter.1}% 8
+\BOOKMARK [1][-]{section.1.5}{1.5 The roles of variable's index}{chapter.1}% 9
+\BOOKMARK [0][-]{chapter.2}{2 Basic Notation}{}% 10
+\BOOKMARK [1][-]{section.2.1}{2.1 Modeling of free-floating base robots}{chapter.2}% 11
+\BOOKMARK [2][-]{subsection.2.1.1}{2.1.1 Kinematics}{section.2.1}% 12
+\BOOKMARK [2][-]{subsection.2.1.2}{2.1.2 Kinetic energy}{section.2.1}% 13
+\BOOKMARK [2][-]{subsection.2.1.3}{2.1.3 Inertia submatrices}{section.2.1}% 14
+\BOOKMARK [2][-]{subsection.2.1.4}{2.1.4 Equation of motion}{section.2.1}% 15
+\BOOKMARK [1][-]{section.2.2}{2.2 Momentum conservation law}{chapter.2}% 16
+\BOOKMARK [2][-]{subsection.2.2.1}{2.2.1 Linear momentum conservation law}{section.2.2}% 17
+\BOOKMARK [2][-]{subsection.2.2.2}{2.2.2 Angular momentum conservation law}{section.2.2}% 18
+\BOOKMARK [1][-]{section.2.3}{2.3 Reaction Null-Space}{chapter.2}% 19
+\BOOKMARK [2][-]{subsection.2.3.1}{2.3.1 Momentum based derivation}{section.2.3}% 20
+\BOOKMARK [2][-]{subsection.2.3.2}{2.3.2 Dynamics based derivation}{section.2.3}% 21
+\BOOKMARK [1][-]{section.2.4}{2.4 Summary}{chapter.2}% 22
+\BOOKMARK [-1][-]{part.1}{I Reactionless Motion Control}{}% 23
+\BOOKMARK [0][-]{chapter.3}{3 Review of Reactionless Motion and Analysis}{part.1}% 24
+\BOOKMARK [1][-]{section.3.1}{3.1 Reactionless motion control}{chapter.3}% 25
+\BOOKMARK [1][-]{section.3.2}{3.2 Qualitative study of reactionless motion}{chapter.3}% 26
+\BOOKMARK [2][-]{subsection.3.2.1}{3.2.1 Vector field of reactionless motion}{section.3.2}% 27
+\BOOKMARK [2][-]{subsection.3.2.2}{3.2.2 Fixed point and bifurcation}{section.3.2}% 28
+\BOOKMARK [2][-]{subsection.3.2.3}{3.2.3 Rank deficiency of the coupling inertia matrix}{section.3.2}% 29
+\BOOKMARK [1][-]{section.3.3}{3.3 Summary}{chapter.3}% 30
+\BOOKMARK [0][-]{chapter.4}{4 Proposal of Reactionless Tasks}{part.1}% 31
+\BOOKMARK [1][-]{section.4.1}{4.1 Manipulator model}{chapter.4}% 32
+\BOOKMARK [2][-]{subsection.4.1.1}{4.1.1 Model description}{section.4.1}% 33
+\BOOKMARK [2][-]{subsection.4.1.2}{4.1.2 Reactionless motion representation}{section.4.1}% 34
+\BOOKMARK [1][-]{section.4.2}{4.2 Inspection task using a hand-held camera}{chapter.4}% 35
+\BOOKMARK [2][-]{subsection.4.2.1}{4.2.1 Control command}{section.4.2}% 36
+\BOOKMARK [2][-]{subsection.4.2.2}{4.2.2 Numerical simulation}{section.4.2}% 37
+\BOOKMARK [1][-]{section.4.3}{4.3 Singularities within the inspection task}{chapter.4}% 38
+\BOOKMARK [2][-]{subsection.4.3.1}{4.3.1 Problem statement}{section.4.3}% 39
+\BOOKMARK [2][-]{subsection.4.3.2}{4.3.2 Singularity treatment with the Damped Least-Squares inverse}{section.4.3}% 40
+\BOOKMARK [1][-]{section.4.4}{4.4 Point-to-point positioning task}{chapter.4}% 41
+\BOOKMARK [2][-]{subsection.4.4.1}{4.4.1 The 3-Phase method}{section.4.4}% 42
+\BOOKMARK [2][-]{subsection.4.4.2}{4.4.2 Verification via numerical simulations}{section.4.4}% 43
+\BOOKMARK [1][-]{section.4.5}{4.5 Deployment task}{chapter.4}% 44
+\BOOKMARK [2][-]{subsection.4.5.1}{4.5.1 Full reactionless task}{section.4.5}% 45
+\BOOKMARK [1][-]{section.4.6}{4.6 Summary}{chapter.4}% 46
+\BOOKMARK [0][-]{chapter.5}{5 Energy Consumption Analysis}{part.1}% 47
+\BOOKMARK [1][-]{section.5.1}{5.1 Kinetic energy}{chapter.5}% 48
+\BOOKMARK [1][-]{section.5.2}{5.2 Motion equivalence}{chapter.5}% 49
+\BOOKMARK [2][-]{subsection.5.2.1}{5.2.1 Comparative study for the inspection task}{section.5.2}% 50
+\BOOKMARK [2][-]{subsection.5.2.2}{5.2.2 Simulation results}{section.5.2}% 51
+\BOOKMARK [1][-]{section.5.3}{5.3 Summary}{chapter.5}% 52
+\BOOKMARK [-1][-]{part.2}{II Motion/Force Control}{}% 53
+\BOOKMARK [0][-]{chapter.6}{6 Formulation and Modeling}{part.2}% 54
+\BOOKMARK [1][-]{section.6.1}{6.1 Formulations}{chapter.6}% 55
+\BOOKMARK [2][-]{subsection.6.1.1}{6.1.1 OS formulation based control}{section.6.1}% 56
+\BOOKMARK [2][-]{subsection.6.1.2}{6.1.2 Reaction Null-Space based control}{section.6.1}% 57
+\BOOKMARK [1][-]{section.6.2}{6.2 Examples}{chapter.6}% 58
+\BOOKMARK [2][-]{subsection.6.2.1}{6.2.1 Planar three-DoF manipulator}{section.6.2}% 59
+\BOOKMARK [2][-]{subsection.6.2.2}{6.2.2 Seven DoF redundant manipulator}{section.6.2}% 60
+\BOOKMARK [1][-]{section.6.3}{6.3 Summary}{chapter.6}% 61
+\BOOKMARK [0][-]{chapter.7}{7 Analysis of Joint Motion Behavior}{part.2}% 62
+\BOOKMARK [1][-]{section.7.1}{7.1 Influence of the inertia parameter}{chapter.7}% 63
+\BOOKMARK [2][-]{subsection.7.1.1}{7.1.1 Analysis through simulation}{section.7.1}% 64
+\BOOKMARK [2][-]{subsection.7.1.2}{7.1.2 Discussion}{section.7.1}% 65
+\BOOKMARK [2][-]{subsection.7.1.3}{7.1.3 Verification via numerical simulations}{section.7.1}% 66
+\BOOKMARK [1][-]{section.7.2}{7.2 Stabilization of joint motion}{chapter.7}% 67
+\BOOKMARK [2][-]{subsection.7.2.1}{7.2.1 Velocity-level based acceleration solution}{section.7.2}% 68
+\BOOKMARK [2][-]{subsection.7.2.2}{7.2.2 Verification via numerical simulations}{section.7.2}% 69
+\BOOKMARK [1][-]{section.7.3}{7.3 Summary}{chapter.7}% 70
+\BOOKMARK [0][-]{chapter.8}{8 Conclusions and Future Research Directions}{part.2}% 71
+\BOOKMARK [1][-]{section.8.1}{8.1 Conclusions}{chapter.8}% 72
+\BOOKMARK [1][-]{section.8.2}{8.2 Future tasks}{chapter.8}% 73
+\BOOKMARK [0][-]{chapter*.23}{Acknowledgment}{part.2}% 74
+\BOOKMARK [0][-]{chapter*.25}{References}{part.2}% 75
+\BOOKMARK [0][-]{chapter*.27}{Research Progresses}{part.2}% 76
+\BOOKMARK [0][-]{appendix.A}{A Spatial Momentum}{part.2}% 77
+\BOOKMARK [1][-]{section.A.1}{A.1 Spatial transformation}{appendix.A}% 78
+\BOOKMARK [1][-]{section.A.2}{A.2 Spatial CoM velocity}{appendix.A}% 79

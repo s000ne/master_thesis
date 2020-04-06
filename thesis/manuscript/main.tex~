@@ -1,0 +1,147 @@
+% Class file
+\documentclass[12pt]{book}
+%
+%
+% Use packages
+\bibliographystyle{IEEEtran}
+\usepackage{thesis}
+% \usepackage[dvips]{graphicx}
+\usepackage[dvipdfmx]{graphicx} %
+\usepackage{amsmath, amssymb,bm}
+\usepackage{cite}
+% Setting of bookmark and thesis information
+\usepackage[dvipdfm,%
+bookmarks=true,%
+bookmarksnumbered=true,%
+bookmarkstype=toc,%
+pdftitle={Reactionless Motion Control of Free-Floating/Flying Space Manipulators and its Applications},%
+pdfsubject={Master Thesis Presented to the Graduate School of Engineering},%
+pdfauthor={Hiroki~Sone},%
+pdfkeywords={Free-floating/flying space manipulator, Reactionless motion control},%
+]{hyperref}
+%
+%
+% User setting
+\input{./macros}
+\input{def}
+\renewcommand{\studentid}{1481214}
+\renewcommand{\mauthor}{Hiroki~Sone}
+\renewcommand{\university}{Tokyo~City~University}
+\renewcommand{\dateofsubmission}{January 29th, 2016}
+%
+%
+% Title
+\title{
+  {\LARGE\bf
+    Reactionless Motion Control of Free-Floating/Flying Space Manipulators and its Applications
+  }
+  % \vspace{2truecm}
+}
+%
+%
+% Authors
+\author{\cover}
+
+%
+%
+% Date
+\date{
+  \dateofsubmission
+}
+%
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+\baselineskip=1.6em
+\parindent=12pt
+
+% Make title of this paper.
+\pagestyle{empty}
+\maketitle
+
+% Set page style.
+% "empty"     : Don't show page numbers
+% "headings"  : Set header in each page
+% "plain"     : Page number only
+% "myheadings": Use myheadings
+%
+\pagestyle{headings}
+%
+%
+% Set page number
+\setcounter{page}{1}
+%
+%
+% Make table of contents based on "***.toc".
+\tableofcontents
+%
+%
+% Make List of figures and tables.
+\listoffigures
+\listoftables
+
+
+
+\chapter{Introduction}
+\label{cha:INTRO}
+\input{./chapter1}
+
+\chapter{Basic Notation}
+\label{cha:BASIC}
+\input{./chapter2}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\part{Reactionless Motion Control}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\chapter{Review of Reactionless Motion and Analysis}
+\label{cha:ANALYSIS}
+\input{./chapter3}
+
+\chapter{Proposal of Reactionless Tasks}
+\label{cha:PROPOSAL}
+\input{./chapter4}
+
+\chapter{Energy Consumption Analysis}
+\label{cha:ENERGY}
+\input{./chapter5}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\part{Motion/Force Control}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\chapter{Formulation and Modeling}
+\label{cha:FORMULATION}
+\input{./chapter6}
+
+\chapter{Analysis of  Joint Motion Behavior}
+\label{cha:JOINT}
+\input{./chapter7}
+
+
+\chapter{Conclusions and Future Research Directions}
+\label{cha:CONCLUSION}
+\input{./conclusion}
+
+
+% \acknowledgment
+% \label{cha:THNAK}
+% \input{./acknowledgment}
+
+\reference
+\label{cha:REF}
+\input{./ref}
+
+\result
+\label{cha:RESULT}
+\input{./result}
+
+\appendix
+\chapter{Spatial Momentum}
+\label{cha:SPATIAL}
+\input{appendix/spatialMomentum}
+
+\end{document}
+%
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: t
+%%% End:

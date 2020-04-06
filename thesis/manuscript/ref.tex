@@ -1,0 +1,20 @@
+\pagestyle{headings}
+\def\thebibliography#1{
+  \section*{\markboth{References}{References}}
+  \list
+  {[\arabic{enumi}]}{\settowidth\labelwidth{[#1]}\leftmargin\labelwidth
+    \advance\leftmargin\labelsep
+    \usecounter{enumi}}
+  \def\newblock{\hskip .11em plus .33em minus .07em}
+  \sloppy
+  \sfcode`\.=1000\relax
+}
+
+\bibliography{bibitem}
+
+
+
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: "main"
+%%% End:

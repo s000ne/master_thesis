@@ -1,0 +1,8 @@
+\documentclass{jsarticle}
+\pagestyle{empty}
+
+\begin{document}
+$m_{r}$\\
+$I_{r}$
+
+\end{document}

@@ -1,0 +1,214 @@
+This section explains the detailed character of the spatial momentum of a free-floating base robot.
+In particular, angular momentum varies depending on the reference coordinate frame.
+With space robots, the base coordinate frame has been made use of representing the angular momentum.
+On the other hand, the angular momentum with respect to the system CoM can be feasible
+under controlling humanoid robots.
+We describe the relation of these momenta in what follows.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Spatial transformation}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Let us consider a free-floating base robot that consists of $n$ joints manipulator(s)
+and a floating base.
+Then, the most basic definition of linear and angular momentum is expressed as follows:
+% 
+% ---------------------------------------------------------------------
+\begin{align}
+  \bm{p} &= \sum_{i=0}^{n}m_{i}\bm{v}_{i} = m_{C}\bm{v}_{C}\label{eq:APP_LINEAR_MOM}\\
+  \bm{l}_{F} &= \sum_{i=0}^{n}\Big\{\bm{I}_{i}\bm{\omega}_{i} + m_{i}[\bm{r}_{i}^{\times}]\bm{v}_{i}\Big\}\label{eq:APP_ANG_MOM_F}
+\end{align} 
+% ---------------------------------------------------------------------
+%
+where $\bm{l}_{F}\R{3}$ is angular momentum with respect to the inertial frame $\{F\}$.
+$\bm{r}_{i}$, $\bm{v}_{i}$ and $\bm{\omega}_{i}\R{3}$ stand for
+position vector pointing to the center of mass (CoM) of each link,
+linear velocity of each link CoM and
+angular velocity of each link, respectively.
+$m_{i}$, $\bm{I}_{i}\R{3 \times 3}$ are mass and inertia tensor of each link around
+the center of mass of each link.
+Note that the inertia tensor is described with respect to the inertial frame.
+
+If the position vector is expressed as $\bm{r}_{i} = \bm{r}_{C} + \bm{r}_{C \rightarrow i}$,
+where $\bm{r}_{C}$ and $\bm{r}_{C \rightarrow i}$ are position vector pointing to the system CoM and
+each link CoM with respect to the system CoM,
+the angular momentum can be rewritten as follows:
+%
+\begin{align}\label{eq:LF}
+  \bm{l}_{F} = &\sum_{i=0}^{n}\Big\{\bm{I}_{i}\bm{\omega}_{i}\Big\} + 
+  \sum_{i=0}^{n}\Big\{m_{i}(\bm{r}_{C} + \bm{r}_{C \rightarrow i})\times (\bm{v}_{C} + \bm{v}_{C \rightarrow i})\Big\}\\
+  = &\sum_{i=0}^{n}\Big\{\bm{I}_{i}\bm{\omega}_{i}\Big\}
+  + \sum_{i=0}^{n}m_{i}[\bm{r}_{C}^{\times}]\bm{v}_{C} + \sum_{i=0}^{n}m_{i}[\bm{r}_{C}^{\times}]\bm{v}_{C \rightarrow i}\notag\\
+  &+ \sum_{i=0}^{n}m_{i}[\bm{r}_{C \rightarrow i}^{\times}]\bm{v}_{C} + \sum_{i=0}^{n}m_{i}[\bm{r}_{C \rightarrow i}^{\times}]\bm{v}_{C \rightarrow i}\notag\\
+  = & \sum_{i=0}^{n}\Big\{\bm{I}_{i}\bm{\omega}_{i}\Big\} + [\bm{r}_{C}^{\times}]\bm{p} +
+  \sum_{i=0}^{n}[\bm{r}_{C \rightarrow i}^{\times}]\bm{v}_{C \rightarrow i}\notag
+\end{align}
+%
+where $\bm{v}_{C}\R{3}$ denotes linear velocity of the system CoM.
+Note that we made use of the conditions,
+$\sum_{i=0}^{n}m_{i}[\bm{r}_{C \rightarrow i}^{\times}] = \bm{0}$ and
+$\sum_{i=0}^{n}m_{i}[\bm{v}_{C \rightarrow i}^{\times}] = \bm{0}$, in the above formulation.
+
+Next, we consider the case when all joints are locked ($\th = \bm{0}$).
+Then, the following relation can be obtained:
+%
+\begin{align}
+  \bm{\omega}_{i} &= \bm{\omega}_{C}\\
+  \bm{v}_{C \rightarrow i} &= [\bm{r}_{i \rightarrow C}^{\times}]\bm{\omega}_{C}
+\end{align}
+%
+Substituting these relations into \eq{LF},
+we can obtain the following equation:
+%
+\begin{align}
+  \bm{l}_{F} &= \sum_{i=0}^{n}\bm{I}_{i}\bm{\omega}_{C} + \bm{r}_{C} \times \bm{p}
+  + \sum_{i=0}^{n}m_{i}[\bm{r}_{C \rightarrow i}^{\times}][\bm{r}_{i \rightarrow C}^{\times}]\bm{\omega}_{C}\\
+  &= \sum_{i=0}^{n}\Big\{\bm{I}_{i} + m_{i}[\bm{r}_{C \rightarrow i}^{\times}][\bm{r}_{i \rightarrow C}^{\times}]\Big\}\bm{\omega}_{C} + \bm{r}_{C}\times \bm{p}\notag\\
+  &= \bm{I}_{C}\bm{\omega}_{C} + \bm{r}_{C}\times \bm{p}\notag\label{eq:APP_ANG_MOM_F2}
+\end{align}
+%
+where $\bm{I}_{C} = \sum_{i=0}^{n}\{\bm{I}_{i} + m_{i}[\bm{r}_{C \rightarrow i}^{\times}][\bm{r}_{i \rightarrow C}^{\times}]\}\R{3 \times 3}$ is
+the CRB inertia tensor when all joint are locked.
+
+On the other hand, the angular momentum with respect to the CoM $\{C\}$ can be obtained through
+spatial transformation from $\{F\}$ as:
+%
+\begin{align}
+  \mathcal{L}_{C} &= {}^{C}\bm{T}_{F}^{T}\mathcal{L}_{F}
+\end{align}
+%
+or
+%
+\begin{align}
+  \mathcal{L}_{C} 
+  = \bmat{\bm{p} \\ \bm{l}_{C}} = \bmat{\bm{E} & \bm{0} \\ -[\bm{r}_{C}^{\times}] & \bm{E}}\bmat{\bm{p} \\ \bm{l}_{F}}
+  = \bmat{\bm{p} \\ \bm{l}_{F}} - \bmat{\bm{0}\\\bm{r}_{C}\times \bm{p}}\label{eq:APP_ANG_MOM_C}
+\end{align}
+%
+where $\mathcal{L}_{i}\R{6}$ denotes spatial momentum.
+
+According to the equations \eq{APP_LINEAR_MOM} and \eq{APP_ANG_MOM_C},
+we can rewrite the spatial momentum with respect to $\{C\}$ as follows:
+%
+\begin{align}
+  \mathcal{L}_{C} &= \bm{M}_{C}\mathcal{V}_{C}\\
+  &= \bmat{m_{C}\bm{E} & \bm{0} \\ \bm{0} & \bm{I}_{C}}\bmat{\bm{v}_{C}\\\bm{\omega}_{C}}\label{eq:APP_LC}.
+\end{align}
+%
+
+On the other hand,
+the spatial momentum with respect to the base CoM $\mathcal{L}_{B}$ can be obtained
+through a spatial transformation from $\mathcal{L}_{C}$ as follows:
+%
+\begin{align}
+  \mathcal{L}_{B} = {}^{B}\bm{T}_{C}^{T}\mathcal{L}_{C}\label{eq:APP_LB_LC}
+\end{align}
+%
+or
+%
+\begin{align}
+  \mathcal{L}_{B} = \bmat{\bm{p}\\ \bm{l}_{B}} = \bmat{\bm{p} \\ \bm{l}_{C} - [\bm{r}_{C \rightarrow B}^\times]\bm{p}}
+\end{align}
+%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Spatial CoM velocity}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+We derive the spatial velocity of the system CoM without considering locked joints ($\th \not = \bm{0}$).
+First, the linear velocity of the system CoM is defined as follows:
+%
+\begin{align}
+  \bm{v}_{C} &= \frac{1}{m_{C}}\sum_{i=0}^{n}m_{i}\bm{v}_{i}\\
+  &= \bm{v}_{b} - [\bm{r}_{b \rightarrow C}^{\times}]\bm{\omega}_{b} + \bm{J}_{C}\thd
+\end{align}
+%
+where $\bm{J}_{C}\R{3 \times n}$ denotes the system CoM Jacobian.
+
+On the other hand,
+the angular velocity of the system CoM cannot be obtained by such straightforward manner.
+In order to derive it, we first obtain the spatial momentum with respect to the system CoM
+in terms of spatial base velocity and joint velocity.
+The base spatial momentum $\mathcal{L}_{B}$ is expressed in the following form \cite{Masutani}:
+%
+\begin{align}
+  \mathcal{L}_{B} =
+  \begin{bmatrix}
+    m_{C}\bm{E} & m_{C}[\bm{r}_{b \rightarrow C}^{\times}]^{T} & m_{C}\bm{J}_{C}\\
+    m_{C}[\bm{r}_{b \rightarrow C}^{\times}] & \bm{M}_{\omega} & \bm{M}_{\omega l}
+  \end{bmatrix}
+  \bmat{\bm{v}_{b} \\ \bm{\omega}_{b} \\ \thd}
+\end{align}
+%
+Through the transformation in \eq{APP_LB_LC},
+the CoM spatial momentum can be obtained as follows:
+%
+\begin{align}
+  \mathcal{L}_{C} &= {}^{C}\bm{T}_{B}^{-1}\mathcal{L}_{B}\label{eq:APP_LC2}\\
+  &=
+  \begin{bmatrix}
+    m_{C}\bm{E} & m_{C}[\bm{r}_{b \rightarrow C}^{\times}]^{T} & m_{C}\bm{J}_{C}\\
+    \bm{0} & \bm{I}_{C} & \bm{H}_{C}
+  \end{bmatrix}
+  \bmat{\bm{v}_{b} \\ \bm{\omega}_{b} \\ \thd}\notag\\
+  \bm{I}_{C} &= \sum_{i=0}^{n}\bm{I}_{i} + \sum_{i=1}^{n}m_{i}[\bm{r}_{C \rightarrow i}^{\times}][\bm{r}_{i \rightarrow b}^{\times}]\label{eq:APP_IC}\\
+  \bm{H}_{C} &= \sum_{i=1}^{n}\{\bm{I}_{i}\bm{J}_{\omega_{i}} + m_{i}[\bm{r}_{C \rightarrow i}^{\times}]\bm{J}_{v_{i}}\}
+\end{align}
+%
+Note that the definition of $\bm{I}_{C}$ seems to be difference from that in \eq{APP_ANG_MOM_F2}.
+However, these are equivalent as seen from the following proof.
+
+First, we rewrite the CRB inertia tensor described in \eq{APP_ANG_MOM_F2} into the following form:
+%
+\begin{align}
+  \bm{I}_{C} &= \sum_{i=0}^{n}\{\bm{I}_{i} + m_{i}[\bm{r}_{C \rightarrow i}^{\times}]^{T}[\bm{r}_{C \rightarrow i}^{\times}]\\
+  &= \sum_{i=0}^{n}\bm{I}_{i} + \sum_{i=1}^{n}m_{i}[\bm{r}_{C \rightarrow i}^{\times}][\bm{r}_{i \rightarrow C}^{\times}] +
+  m_{b}[\bm{r}_{C \rightarrow b}^{\times}][\bm{r}_{b \rightarrow C}^{\times}]\label{eq:APP_IC2}
+\end{align}
+%
+Then, subtracting \eq{APP_IC2} from \eq{APP_IC},
+we obtain:
+%
+\begin{align}
+  &\sum_{i=1}^{n}m_{i}[\bm{r}_{C \rightarrow i}^{\times}][{}^{i}\bm{r}_{C}^{\times}] + m_{b}[\bm{r}_{C \rightarrow b}^{\times}][\bm{r}_{b \rightarrow C}^{\times}]
+  - \sum_{i=1}^{n}m_{i}[\bm{r}_{C \rightarrow i}^{\times}][\bm{r}_{i \rightarrow b}^{\times}]\notag\\
+  = &\sum_{i=1}^{n}m_{i}[\bm{r}_{C \rightarrow i}^{\times}][\bm{r}_{b \rightarrow C}^{\times}]
+  + m_{b}[\bm{r}_{C \rightarrow b}^{\times}][\bm{r}_{b \rightarrow C}^{\times}]\notag\\
+  = &\Big\{\sum_{i=0}^{n}m_{i}[\bm{r}_{C \rightarrow i}^{\times}]\Big\}[\bm{r}_{b \rightarrow C}^{\times}] \notag\\
+  = &\bm{0}
+\end{align}
+%
+Note that we made use of the condition $\sum m_{i}[\bm{r}_{C \rightarrow i}^{\times}] = \bm{0}$;
+this implies that the CoM position vector with respect to the CoM, i.e.\ zero.
+
+Finally, we can derive the CoM angular velocity from \eq{APP_IC} and \eq{APP_IC2}.
+According to these equations, the angular momentum with respect to the system CoM can be expressed as follows:
+%
+\begin{align}
+  \bm{l}_{C} &= \bm{I}_{C}\bm{\omega}_{C}\\
+  &= \bm{I}_{C}\bm{\omega}_{b} + \bm{H}_{C}\thd
+\end{align}
+%
+Hence, the CoM angular velocity is obtained as:
+%
+\begin{align}
+  \bm{\omega}_{C} = \bm{\omega}_{b} + \bm{I}_{C}^{-1}\bm{H}_{C}\thd
+\end{align}
+%
+Then, the spatial velocity of the system CoM is written as:
+%
+\begin{align}
+  \mathcal{V}_{C} = {}^{C}\bm{T}_{B}\mathcal{V}_{B} + \bmat{\bm{J}_{C} \\ \bm{I}_{C}^{-1}\bm{H}_{C}}\thd.
+\end{align}
+%
+
+
+
+
+
+
+%**********************************************************************
+%
+%
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: "../main"
+%%% End:

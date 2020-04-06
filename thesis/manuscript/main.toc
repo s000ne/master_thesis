@@ -1,0 +1,98 @@
+\contentsline {chapter}{\numberline {1}Introduction}{11}{chapter.1}
+\contentsline {section}{\numberline {1.1}Space robots}{11}{section.1.1}
+\contentsline {subsection}{\numberline {1.1.1}Control issues with FFSR}{13}{subsection.1.1.1}
+\contentsline {subsection}{\numberline {1.1.2}Reactionless motion control}{14}{subsection.1.1.2}
+\contentsline {subsection}{\numberline {1.1.3}Energy consumption}{16}{subsection.1.1.3}
+\contentsline {section}{\numberline {1.2}Motion/Force control}{17}{section.1.2}
+\contentsline {section}{\numberline {1.3}Aim of this study}{19}{section.1.3}
+\contentsline {section}{\numberline {1.4}Outline of this thesis}{20}{section.1.4}
+\contentsline {section}{\numberline {1.5}The roles of variable's index}{21}{section.1.5}
+\contentsline {chapter}{\numberline {2}Basic Notation}{23}{chapter.2}
+\contentsline {section}{\numberline {2.1}Modeling of free-floating base robots}{23}{section.2.1}
+\contentsline {subsection}{\numberline {2.1.1}Kinematics}{24}{subsection.2.1.1}
+\contentsline {subsection}{\numberline {2.1.2}Kinetic energy}{25}{subsection.2.1.2}
+\contentsline {subsection}{\numberline {2.1.3}Inertia submatrices}{26}{subsection.2.1.3}
+\contentsline {subsection}{\numberline {2.1.4}Equation of motion}{27}{subsection.2.1.4}
+\contentsline {section}{\numberline {2.2}Momentum conservation law}{28}{section.2.2}
+\contentsline {subsection}{\numberline {2.2.1}Linear momentum conservation law}{28}{subsection.2.2.1}
+\contentsline {subsection}{\numberline {2.2.2}Angular momentum conservation law}{29}{subsection.2.2.2}
+\contentsline {section}{\numberline {2.3}Reaction Null-Space}{31}{section.2.3}
+\contentsline {subsection}{\numberline {2.3.1}Momentum based derivation}{32}{subsection.2.3.1}
+\contentsline {subsection}{\numberline {2.3.2}Dynamics based derivation}{32}{subsection.2.3.2}
+\contentsline {section}{\numberline {2.4}Summary}{33}{section.2.4}
+\contentsline {part}{I\hspace {1em}Reactionless Motion Control}{35}{part.1}
+\contentsline {chapter}{\numberline {3}Review of Reactionless Motion and Analysis}{37}{chapter.3}
+\contentsline {section}{\numberline {3.1}Reactionless motion control}{37}{section.3.1}
+\contentsline {section}{\numberline {3.2}Qualitative study of reactionless motion}{39}{section.3.2}
+\contentsline {subsection}{\numberline {3.2.1}Vector field of reactionless motion}{39}{subsection.3.2.1}
+\contentsline {subsection}{\numberline {3.2.2}Fixed point and bifurcation}{40}{subsection.3.2.2}
+\contentsline {subsection}{\numberline {3.2.3}Rank deficiency of the coupling inertia matrix}{42}{subsection.3.2.3}
+\contentsline {section}{\numberline {3.3}Summary}{43}{section.3.3}
+\contentsline {chapter}{\numberline {4}Proposal of Reactionless Tasks}{45}{chapter.4}
+\contentsline {section}{\numberline {4.1}Manipulator model}{45}{section.4.1}
+\contentsline {subsection}{\numberline {4.1.1}Model description}{45}{subsection.4.1.1}
+\contentsline {subsection}{\numberline {4.1.2}Reactionless motion representation}{46}{subsection.4.1.2}
+\contentsline {section}{\numberline {4.2}Inspection task using a hand-held camera}{49}{section.4.2}
+\contentsline {subsection}{\numberline {4.2.1}Control command}{50}{subsection.4.2.1}
+\contentsline {subsection}{\numberline {4.2.2}Numerical simulation}{51}{subsection.4.2.2}
+\contentsline {section}{\numberline {4.3}Singularities within the inspection task}{54}{section.4.3}
+\contentsline {subsection}{\numberline {4.3.1}Problem statement}{54}{subsection.4.3.1}
+\contentsline {subsection}{\numberline {4.3.2}Singularity treatment with the Damped Least-Squares inverse}{56}{subsection.4.3.2}
+\contentsline {subsubsection}{The Singularity Consistent method}{58}{section*.4}
+\contentsline {section}{\numberline {4.4}Point-to-point positioning task}{60}{section.4.4}
+\contentsline {subsection}{\numberline {4.4.1}The 3-Phase method}{61}{subsection.4.4.1}
+\contentsline {subsection}{\numberline {4.4.2}Verification via numerical simulations}{62}{subsection.4.4.2}
+\contentsline {section}{\numberline {4.5}Deployment task}{65}{section.4.5}
+\contentsline {subsection}{\numberline {4.5.1}Full reactionless task}{66}{subsection.4.5.1}
+\contentsline {subsubsection}{Partial reactionless deployment}{67}{section*.5}
+\contentsline {section}{\numberline {4.6}Summary}{68}{section.4.6}
+\contentsline {chapter}{\numberline {5}Energy Consumption Analysis}{71}{chapter.5}
+\contentsline {section}{\numberline {5.1}Kinetic energy}{71}{section.5.1}
+\contentsline {section}{\numberline {5.2}Motion equivalence}{73}{section.5.2}
+\contentsline {subsubsection}{Two-DoF planar manipulator}{73}{section*.6}
+\contentsline {subsubsection}{The role of parameter variation}{74}{section*.7}
+\contentsline {subsubsection}{Four-DoF spatial manipulator}{75}{section*.8}
+\contentsline {subsubsection}{Discussion}{76}{section*.9}
+\contentsline {subsection}{\numberline {5.2.1}Comparative study for the inspection task}{78}{subsection.5.2.1}
+\contentsline {subsubsection}{Simulation condition}{78}{section*.10}
+\contentsline {subsection}{\numberline {5.2.2}Simulation results}{79}{subsection.5.2.2}
+\contentsline {section}{\numberline {5.3}Summary}{80}{section.5.3}
+\contentsline {part}{II\hspace {1em}Motion/Force Control}{83}{part.2}
+\contentsline {chapter}{\numberline {6}Formulation and Modeling}{85}{chapter.6}
+\contentsline {section}{\numberline {6.1}Formulations}{85}{section.6.1}
+\contentsline {subsection}{\numberline {6.1.1}OS formulation based control}{85}{subsection.6.1.1}
+\contentsline {subsubsection}{Equation of motion in end-effector coordinates}{85}{section*.11}
+\contentsline {subsubsection}{Control command}{87}{section*.12}
+\contentsline {subsection}{\numberline {6.1.2}Reaction Null-Space based control}{89}{subsection.6.1.2}
+\contentsline {subsubsection}{End-link dynamics based on free-floating base coordinates}{89}{section*.13}
+\contentsline {subsubsection}{Control command}{90}{section*.14}
+\contentsline {subsubsection}{Constraint force}{91}{section*.15}
+\contentsline {section}{\numberline {6.2}Examples}{92}{section.6.2}
+\contentsline {subsection}{\numberline {6.2.1}Planar three-DoF manipulator}{92}{subsection.6.2.1}
+\contentsline {subsubsection}{Parameter transformation}{94}{section*.16}
+\contentsline {subsubsection}{Simulation}{95}{section*.17}
+\contentsline {subsection}{\numberline {6.2.2}Seven DoF redundant manipulator}{97}{subsection.6.2.2}
+\contentsline {section}{\numberline {6.3}Summary}{99}{section.6.3}
+\contentsline {chapter}{\numberline {7}Analysis of Joint Motion Behavior}{103}{chapter.7}
+\contentsline {section}{\numberline {7.1}Influence of the inertia parameter}{103}{section.7.1}
+\contentsline {subsection}{\numberline {7.1.1}Analysis through simulation}{104}{subsection.7.1.1}
+\contentsline {subsection}{\numberline {7.1.2}Discussion}{105}{subsection.7.1.2}
+\contentsline {subsubsection}{Minimum acceleration constraint}{105}{section*.18}
+\contentsline {subsubsection}{The RNS constraint}{106}{section*.19}
+\contentsline {subsubsection}{The interpretation}{106}{section*.20}
+\contentsline {subsection}{\numberline {7.1.3}Verification via numerical simulations}{107}{subsection.7.1.3}
+\contentsline {section}{\numberline {7.2}Stabilization of joint motion}{109}{section.7.2}
+\contentsline {subsection}{\numberline {7.2.1}Velocity-level based acceleration solution}{110}{subsection.7.2.1}
+\contentsline {subsection}{\numberline {7.2.2}Verification via numerical simulations}{111}{subsection.7.2.2}
+\contentsline {section}{\numberline {7.3}Summary}{112}{section.7.3}
+\contentsline {chapter}{\numberline {8}Conclusions and Future Research Directions}{113}{chapter.8}
+\contentsline {section}{\numberline {8.1}Conclusions}{113}{section.8.1}
+\contentsline {section}{\numberline {8.2}Future tasks}{115}{section.8.2}
+\contentsline {subsubsection}{Reactionless motion control}{115}{section*.21}
+\contentsline {subsubsection}{Motion/Force control}{115}{section*.22}
+\contentsline {chapter}{Acknowledgment}{117}{chapter*.23}
+\contentsline {chapter}{References}{119}{chapter*.25}
+\contentsline {chapter}{Research Progresses}{129}{chapter*.27}
+\contentsline {chapter}{\numberline {A}Spatial Momentum}{131}{appendix.A}
+\contentsline {section}{\numberline {A.1}Spatial transformation}{131}{section.A.1}
+\contentsline {section}{\numberline {A.2}Spatial CoM velocity}{133}{section.A.2}

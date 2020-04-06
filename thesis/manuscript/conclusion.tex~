@@ -1,0 +1,118 @@
+% Abstract for this chapter
+%
+%**********************************************************************
+
+%%%%%%%%%%%%%%%%%%%%%%%
+\section{Conclusions}
+%%%%%%%%%%%%%%%%%%%%%%%
+The aim of this work was developing control methods based on the Reaction Null-Space formulation
+for redundant manipulators.
+In particular, we tackled two control issues:
+(i) reactionless motion control for free-floating space robots and
+(ii) motion/force control for fixed-base redundant manipulators.
+
+In the case of the first issue,
+we aimed to propose some tasks suitable for execution under reactionless motion control.
+First, we examined the properties of reactionless motion with a planar two-DoF model.
+Through vector field analysis,
+we confirmed that the manipulator attachment position plays an important role as a bifurcation parameter.
+Then, the reactionless motions of a seven-DoF redundant manipulator was discussed.
+From the perspective of the kinematic structure of the model,
+we represent reactionless motion of the model as superposition of the
+predominant wrist and elbow motion.
+Based on these motions,
+we proposed three motion tasks:
+(a) an inspection task using a hand camera,
+(b) a point-to-point positioning task and
+(c) a deployment task from a stowed configuration.
+The performances were verified through numerical simulation.
+
+As an interesting feature of reactionless motion control,
+we found out that reactionless motion coincides with instantaneous minimum energy motion
+when no base-attitude deviation is assumed.
+This feature arises from the high energy consumption of reaction wheels.
+The kinetic energy to compensate the base reaction induced by manipulator motion is represented
+as a quadratic function of the manipulator parameters,
+while the kinetic energy of manipulator is a linear function.
+Hence, reactionless motion is feasible from the perspective of energy efficiency due to the no usage of
+reaction wheels.
+This feature was verified via numerical calculation.
+Finally, we compared the energy consumption of reactionless motion with
+that of reaction wheels used control system,
+under the inspection task explained above.
+From the above results,
+we can conclude that reactionless motion control is feasible from the perspective of both time and
+energy efficiency.
+
+On the other hand,
+we proposed motion/force control based on the Reaction Null-Space formulation.
+We formulated the control scheme and verified it with
+a  planar and a spatial model through numerical simulation.
+From the results,
+we confirmed that the performance of the task space control is as accurate as
+that of a method based on the Operational Space formulation,
+which is the most well-known/used method.
+
+We found out that the joint motion under Reaction Null-Space control
+coincides with that under kinematic control with minimum acceleration norm solution,
+when the constrained link mass/inertia is massive.
+
+As a different issue in redundancy,
+we tackled the joint stabilization problem.
+It is known that unstable behavior of joint motion appears even when
+the task space is stable,
+because a method cannot be integrable.
+With regard to this problem,
+we formulated a velocity-based stabilization term for Reaction Null-Space control.
+Then, it was confirmed that the performance is better than that of a simple damping term.
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Future tasks}
+%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsubsection{Reactionless motion control}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+\begin{itemize}
+\item Singularity of the coupling inertia matrix:
+  Even though kinematic singularities have been much discussed,
+  singularities resulting from the coupling inertia matrix has been unclear, so far.
+  Because the matrix is highly nonlinear and complicated,
+  we cannot discuss it analytically.
+  So, we have to create numerical schemes to the singularities.
+\item Manipulator design for reactionless motion control:
+  In this work, we only dealt with a seven-DoF redundant manipulator.
+  With the model, position control of the end-effector under reactionless motion is impossible.
+  However, position control of the end-effector can be used in several tasks such as
+  assembly, inspection and construction and so on.
+  Hence, we should improve the performance of the control method.
+  One possible way is making use of appropriate manipulators for execution of reactionless motion control.
+  By adding additional DoFs, we can expect that the movable region of the end-effector under reactionless motion
+  broadens.
+\end{itemize}
+%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsubsection{Motion/Force control}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+\begin{itemize}
+\item Influences stemming from the particular solution component:
+  We compared the proposed Reaction Null-Space based control with the Operational Space formulation
+  based control.
+  Then, it was confirmed that the control accuracy in task space was identical,
+  while joint space behavior was quite different.
+  Even so, if we add a null-space component, the two joint motions become the same one.
+  Our concern is whether the particular components make the system dynamics different
+  even when a redundant control is executed.
+\end{itemize}
+%
+
+%**********************************************************************
+%
+%
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: "./main"
+%%% End:
