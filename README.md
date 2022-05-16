@@ -1,2 +1,2 @@
 # master_thesis
-Master thesis of Tokyo City University
+Master thesis on kinematics, dynamics and control of space robot.
